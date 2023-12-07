@@ -100,13 +100,12 @@ Example: `import MyComponent from '$lib/MyComponent.svelte';`
 Use async functions or Svelte's `load` function to fetch data.
 Example in `+page.svelte`:
 
-```svelte
-<script context="module">
-	export async function load() {
-		const response = await fetch('https://api.example.com/data');
-		return { props: { data: await response.json() } };
-	}
-</script>
+```js
+export async function load({ fetch }) {
+	const res = await fetch('https://syntax.fm/api/shows/latest');
+	const data = await res.json();
+	return { props: { data: await response.json() } };
+}
 ```
 
 ## Using hooks
