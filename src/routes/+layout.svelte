@@ -23,6 +23,7 @@
 </main>
 
 <footer>
+	<a href="/contact">Contact</a>
 	<h2>Footer</h2>
 </footer>
 
