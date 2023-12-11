@@ -1,4 +1,8 @@
-<form method="POST">
+<script>
+	import { enhance } from '$app/forms';
+</script>
+
+<form use:enhance method="POST">
 	<label>
 		Name: <input required type="text" name="name" id="name" />
 	</label>
