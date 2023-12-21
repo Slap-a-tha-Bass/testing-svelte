@@ -4,7 +4,7 @@
 
 ### 1. Install Svelte:
 
-Run `npm install svelte@latest <project-name>`
+Run `npm create svelte@latest <project-name>`
 
 ### 2. Project Setup:
 
